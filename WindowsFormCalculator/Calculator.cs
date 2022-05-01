@@ -209,6 +209,7 @@ namespace WindowsFormCalculator
             if (txtCantidad.Text.Length > 1)
             {
                 txtCantidad.Text = txtCantidad.Text.Substring(0, txtCantidad.Text.Length - 1);
+                esResultado = false;
             }
             else
             {
@@ -298,8 +299,8 @@ namespace WindowsFormCalculator
                     if (resultado != 0m)
                     {
 
-                        num2 = num1;
-                        num1 = Convert.ToDecimal(txtCantidad.Text);
+                        num1 = resultado;
+                        num2 = Convert.ToDecimal(txtCantidad.Text);
 
                         txtCantidad.Text = "0";
                         ObtenerResultado();
