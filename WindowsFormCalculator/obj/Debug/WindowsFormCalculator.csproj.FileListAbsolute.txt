@@ -1,0 +1,10 @@
+c:\users\hds\documents\visual studio 2013\Projects\WindowsFormCalculator\WindowsFormCalculator\bin\Debug\WindowsFormCalculator.exe.config
+c:\users\hds\documents\visual studio 2013\Projects\WindowsFormCalculator\WindowsFormCalculator\obj\Debug\WindowsFormCalculator.csprojResolveAssemblyReference.cache
+c:\users\hds\documents\visual studio 2013\Projects\WindowsFormCalculator\WindowsFormCalculator\obj\Debug\Calculadora.Form1.resources
+c:\users\hds\documents\visual studio 2013\Projects\WindowsFormCalculator\WindowsFormCalculator\obj\Debug\WindowsFormCalculator.Properties.Resources.resources
+c:\users\hds\documents\visual studio 2013\Projects\WindowsFormCalculator\WindowsFormCalculator\obj\Debug\WindowsFormCalculator.csproj.GenerateResource.Cache
+c:\users\hds\documents\visual studio 2013\Projects\WindowsFormCalculator\WindowsFormCalculator\bin\Debug\WindowsFormCalculator.exe
+c:\users\hds\documents\visual studio 2013\Projects\WindowsFormCalculator\WindowsFormCalculator\bin\Debug\WindowsFormCalculator.pdb
+c:\users\hds\documents\visual studio 2013\Projects\WindowsFormCalculator\WindowsFormCalculator\obj\Debug\WindowsFormCalculator.Calculator.resources
+c:\users\hds\documents\visual studio 2013\Projects\WindowsFormCalculator\WindowsFormCalculator\obj\Debug\WindowsFormCalculator.exe
+c:\users\hds\documents\visual studio 2013\Projects\WindowsFormCalculator\WindowsFormCalculator\obj\Debug\WindowsFormCalculator.pdb
