@@ -189,16 +189,18 @@ namespace WindowsFormCalculator
                 }
 
                 num2 = Convert.ToDecimal(txtCantidad.Text);
-
                 ObtenerResultado();
                 mostrarResultado();
                 num1 = 0;
                 tipoOperacion = "";
                 txtOperaciones.Text = txtCantidad.Text + " " + tipoOperacion;
-                
-
-              
+                reiniciarDatos(true);
+                /*
+                ObtenerResultado();
+                mostrarResultado();
+                num1 = 0m;*/
             }
+
 
         }
 
@@ -216,16 +218,17 @@ namespace WindowsFormCalculator
 
         private void btnBorrarTodo_Click(object sender, EventArgs e)
         {
-            reiniciarDatos();
+            reiniciarDatos(false);
             //Numero1 = 0;
             //Numero2 = 0;
             //Operador = '\0';
             //txtCantidad.Text = "0";
         }
 
-        private void reiniciarDatos()
+        private void reiniciarDatos(bool enter = false)
         {
-            txtCantidad.Text = "0";
+            
+            txtCantidad.Text = (!enter) ? "0": txtCantidad.Text;
             modo_decimal = false;
             num1 = 0m;
             num2 = 0m;
@@ -296,16 +299,15 @@ namespace WindowsFormCalculator
                     {
 
                         num2 = num1;
-                        //txtCantidad.Text = resultado.ToString();
                         num1 = Convert.ToDecimal(txtCantidad.Text);
-                        
+
+                        txtCantidad.Text = "0";
                         ObtenerResultado();
                         mostrarResultado();
                         num1 = 0;
-                        //txtCantidad.Text = "0";
                     }
                     tipoOperacion = operador;
-                    //txtOperaciones.Text = txtResultado.Text + " " + tipoOperacion;
+                    txtOperaciones.Text = txtCantidad.Text + " " + tipoOperacion;
                     return;
                 }
 
@@ -315,12 +317,11 @@ namespace WindowsFormCalculator
                 num1 = 0;
                 tipoOperacion = operador;
                 txtOperaciones.Text = resultado + " " + tipoOperacion;
-
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Se produjo un error en la cantidad ingresada: " + ex, "Integra - Calculadora - Errorrr");
-                reiniciarDatos();
+                MessageBox.Show("Error Calculadora: "+ex);
+                reiniciarDatos(false);
 
             }
 
